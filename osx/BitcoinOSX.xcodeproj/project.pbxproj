@@ -1,0 +1,2023 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		308682C61BBAF5B5006C519A /* iterator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B99F1BBA05E2004C03D2 /* iterator.cc */; };
+		308682C71BBAF5B5006C519A /* log_reader.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9A01BBA05E2004C03D2 /* log_reader.cc */; };
+		308682C81BBAF5B5006C519A /* log_writer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9A11BBA05E2004C03D2 /* log_writer.cc */; };
+		308682C91BBAF5B5006C519A /* logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9A21BBA05E2004C03D2 /* logging.cc */; };
+		308682CA1BBAF5B5006C519A /* memtable.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9A31BBA05E2004C03D2 /* memtable.cc */; };
+		308682CB1BBAF5B5006C519A /* merger.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9A41BBA05E2004C03D2 /* merger.cc */; };
+		308682CC1BBAF5B5006C519A /* options.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9A51BBA05E2004C03D2 /* options.cc */; };
+		308682CD1BBAF5B5006C519A /* port_posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9A61BBA05E2004C03D2 /* port_posix.cc */; };
+		308682CE1BBAF5B5006C519A /* repair.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9A71BBA05E2004C03D2 /* repair.cc */; };
+		308682CF1BBAF5B5006C519A /* status.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9A81BBA05E2004C03D2 /* status.cc */; };
+		308682D01BBAF5B5006C519A /* table_builder.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9A91BBA05E2004C03D2 /* table_builder.cc */; };
+		308682D11BBAF5B5006C519A /* table_cache.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9AA1BBA05E2004C03D2 /* table_cache.cc */; };
+		308682D21BBAF5B5006C519A /* table.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9AB1BBA05E2004C03D2 /* table.cc */; };
+		308682D31BBAF5B5006C519A /* two_level_iterator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9AC1BBA05E2004C03D2 /* two_level_iterator.cc */; };
+		308682D41BBAF5B5006C519A /* version_edit.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9AD1BBA05E2004C03D2 /* version_edit.cc */; };
+		308682D51BBAF5B5006C519A /* version_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9AE1BBA05E2004C03D2 /* version_set.cc */; };
+		308682D61BBAF5B5006C519A /* write_batch.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9AF1BBA05E2004C03D2 /* write_batch.cc */; };
+		308682FA1BBB0534006C519A /* ripemd160.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308682D71BBB0411006C519A /* ripemd160.cpp */; };
+		308682FB1BBB0534006C519A /* sha1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308682D81BBB0411006C519A /* sha1.cpp */; };
+		308682FC1BBB0534006C519A /* sha256.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308682D91BBB0411006C519A /* sha256.cpp */; };
+		308682FD1BBB0534006C519A /* sha512.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308682DA1BBB0411006C519A /* sha512.cpp */; };
+		308683291BBB0837006C519A /* crypter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086831A1BBB0814006C519A /* crypter.cpp */; };
+		3086832A1BBB0837006C519A /* db.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086831B1BBB0814006C519A /* db.cpp */; };
+		3086832B1BBB0837006C519A /* rpcdump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086831C1BBB0814006C519A /* rpcdump.cpp */; };
+		3086832C1BBB0837006C519A /* rpcwallet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086831D1BBB0814006C519A /* rpcwallet.cpp */; };
+		3086832D1BBB0837006C519A /* wallet_ismine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086831E1BBB0814006C519A /* wallet_ismine.cpp */; };
+		3086832E1BBB0837006C519A /* wallet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086831F1BBB0814006C519A /* wallet.cpp */; };
+		3086832F1BBB0837006C519A /* walletdb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683201BBB0814006C519A /* walletdb.cpp */; };
+		308683431BBB11F2006C519A /* bitcoin_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 308683421BBB11F2006C519A /* bitcoin_common.h */; };
+		308683881BBB1395006C519A /* protocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683781BBB1386006C519A /* protocol.cpp */; };
+		308683891BBB1395006C519A /* pubkey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683791BBB1386006C519A /* pubkey.cpp */; };
+		3086838A1BBB1395006C519A /* scheduler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086837A1BBB1386006C519A /* scheduler.cpp */; };
+		3086838B1BBB1395006C519A /* interpreter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086837B1BBB1386006C519A /* interpreter.cpp */; };
+		3086838C1BBB1395006C519A /* script_error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086837C1BBB1386006C519A /* script_error.cpp */; };
+		3086838D1BBB1395006C519A /* script.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086837D1BBB1386006C519A /* script.cpp */; };
+		3086838E1BBB1395006C519A /* sign.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086837E1BBB1386006C519A /* sign.cpp */; };
+		3086838F1BBB1395006C519A /* standard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086837F1BBB1386006C519A /* standard.cpp */; };
+		308683901BBB1395006C519A /* block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683741BBB1342006C519A /* block.cpp */; };
+		308683911BBB1395006C519A /* transaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683751BBB1342006C519A /* transaction.cpp */; };
+		308683921BBB1395006C519A /* amount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683581BBB12B2006C519A /* amount.cpp */; };
+		308683931BBB1395006C519A /* arith_uint256.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683591BBB12B2006C519A /* arith_uint256.cpp */; };
+		308683941BBB1395006C519A /* base58.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086835A1BBB12B2006C519A /* base58.cpp */; };
+		308683951BBB1395006C519A /* chainparams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086835B1BBB12B2006C519A /* chainparams.cpp */; };
+		308683961BBB1395006C519A /* coins.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086835C1BBB12B2006C519A /* coins.cpp */; };
+		308683971BBB1395006C519A /* compressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086835D1BBB12B2006C519A /* compressor.cpp */; };
+		308683981BBB1395006C519A /* core_read.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086835E1BBB12B2006C519A /* core_read.cpp */; };
+		308683991BBB1395006C519A /* core_write.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086835F1BBB12B2006C519A /* core_write.cpp */; };
+		3086839A1BBB1395006C519A /* eccryptoverify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683601BBB12B2006C519A /* eccryptoverify.cpp */; };
+		3086839B1BBB1395006C519A /* ecwrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683611BBB12B2006C519A /* ecwrapper.cpp */; };
+		3086839C1BBB1395006C519A /* hash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683621BBB12B2006C519A /* hash.cpp */; };
+		3086839D1BBB1395006C519A /* key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683631BBB12B2006C519A /* key.cpp */; };
+		3086839E1BBB1395006C519A /* keystore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683641BBB12B2006C519A /* keystore.cpp */; };
+		3086839F1BBB1395006C519A /* netbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683651BBB12B2006C519A /* netbase.cpp */; };
+		308683A71BBB2D05006C519A /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 308683A61BBB2D05006C519A /* secp256k1.h */; };
+		308683BD1BBB2D5A006C519A /* secp256k1.c in Sources */ = {isa = PBXBuildFile; fileRef = 308683BB1BBB2D53006C519A /* secp256k1.c */; };
+		308683C81BBB316A006C519A /* bitcoin_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 308683C71BBB316A006C519A /* bitcoin_util.h */; };
+		308683F31BBB35C7006C519A /* chainparamsbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683EC1BBB35C7006C519A /* chainparamsbase.cpp */; };
+		308683F41BBB35C7006C519A /* clientversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683ED1BBB35C7006C519A /* clientversion.cpp */; };
+		308683F51BBB35C7006C519A /* glibc_sanity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683EE1BBB35C7006C519A /* glibc_sanity.cpp */; };
+		308683F61BBB35C7006C519A /* glibcxx_sanity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683EF1BBB35C7006C519A /* glibcxx_sanity.cpp */; };
+		308683F71BBB35C7006C519A /* strnlen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683F01BBB35C7006C519A /* strnlen.cpp */; };
+		308683F81BBB35C7006C519A /* random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683F11BBB35C7006C519A /* random.cpp */; };
+		308683F91BBB35C7006C519A /* rpcprotocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683F21BBB35C7006C519A /* rpcprotocol.cpp */; };
+		308684011BBB35E8006C519A /* sync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683DE1BBB321A006C519A /* sync.cpp */; };
+		308684021BBB35E8006C519A /* cleanse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683E81BBB3293006C519A /* cleanse.cpp */; };
+		308684031BBB35E8006C519A /* pagelocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683E91BBB3293006C519A /* pagelocker.cpp */; };
+		308684041BBB35E8006C519A /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683DF1BBB321A006C519A /* util.cpp */; };
+		308684051BBB35E8006C519A /* utilmoneystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683E01BBB321A006C519A /* utilmoneystr.cpp */; };
+		308684061BBB35E8006C519A /* utilstrencodings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683E11BBB321A006C519A /* utilstrencodings.cpp */; };
+		308684071BBB35E8006C519A /* utiltime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308683E21BBB321A006C519A /* utiltime.cpp */; };
+		308684241BBB6843006C519A /* hmac_sha256.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684221BBB6843006C519A /* hmac_sha256.cpp */; };
+		308684251BBB6843006C519A /* hmac_sha512.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684231BBB6843006C519A /* hmac_sha512.cpp */; };
+		3086842D1BBB68EA006C519A /* bitcoin_server.h in Headers */ = {isa = PBXBuildFile; fileRef = 3086842C1BBB68EA006C519A /* bitcoin_server.h */; };
+		308685C31BBB6F6E006C519A /* addrman.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684461BBB6DF6006C519A /* addrman.cpp */; };
+		308685C41BBB6F6E006C519A /* alert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684481BBB6DF6006C519A /* alert.cpp */; };
+		308685C51BBB6F6E006C519A /* bloom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086845C1BBB6DF6006C519A /* bloom.cpp */; };
+		308685C61BBB6F6E006C519A /* chain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086845D1BBB6DF6006C519A /* chain.cpp */; };
+		308685C71BBB6F6E006C519A /* checkpoints.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684601BBB6DF6006C519A /* checkpoints.cpp */; };
+		308685C81BBB6F6E006C519A /* fees.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086846A1BBB6DF6006C519A /* fees.cpp */; };
+		308685C91BBB6F6E006C519A /* httprpc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684701BBB6DF6006C519A /* httprpc.cpp */; };
+		308685CA1BBB6F6E006C519A /* httpserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684711BBB6DF6006C519A /* httpserver.cpp */; };
+		308685CB1BBB6F6E006C519A /* init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684721BBB6DF6006C519A /* init.cpp */; };
+		308685CC1BBB6F6E006C519A /* leveldbwrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684751BBB6DF6006C519A /* leveldbwrapper.cpp */; };
+		308685CD1BBB6F6E006C519A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684781BBB6DF6006C519A /* main.cpp */; };
+		308685CE1BBB6F6E006C519A /* merkleblock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086847A1BBB6DF6006C519A /* merkleblock.cpp */; };
+		308685CF1BBB6F6E006C519A /* miner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086847C1BBB6DF6006C519A /* miner.cpp */; };
+		308685D01BBB6F6E006C519A /* net.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684AD1BBB6DF6006C519A /* net.cpp */; };
+		308685D11BBB6F6E006C519A /* noui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684B11BBB6DF6006C519A /* noui.cpp */; };
+		308685D21BBB6F6E006C519A /* policy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684BC1BBB6DF6006C519A /* policy.cpp */; };
+		308685D31BBB6F6E006C519A /* pow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684BF1BBB6DF6006C519A /* pow.cpp */; };
+		308685D41BBB6F6E006C519A /* rest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684C71BBB6DF7006C519A /* rest.cpp */; };
+		308685D51BBB6F6E006C519A /* rpcblockchain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684CB1BBB6DF7006C519A /* rpcblockchain.cpp */; };
+		308685D61BBB6F6E006C519A /* rpcmining.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684CE1BBB6DF7006C519A /* rpcmining.cpp */; };
+		308685D71BBB6F6E006C519A /* rpcmisc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684CF1BBB6DF7006C519A /* rpcmisc.cpp */; };
+		308685D81BBB6F6E006C519A /* rpcnet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684D01BBB6DF7006C519A /* rpcnet.cpp */; };
+		308685D91BBB6F6E006C519A /* rpcrawtransaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684D11BBB6DF7006C519A /* rpcrawtransaction.cpp */; };
+		308685DA1BBB6F6E006C519A /* rpcserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684D21BBB6DF7006C519A /* rpcserver.cpp */; };
+		308685DB1BBB6F6E006C519A /* sigcache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684DB1BBB6DF7006C519A /* sigcache.cpp */; };
+		308685DC1BBB6F6E006C519A /* timedata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684E41BBB6DF7006C519A /* timedata.cpp */; };
+		308685DD1BBB6F6E006C519A /* txdb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684ED1BBB6DF7006C519A /* txdb.cpp */; };
+		308685DE1BBB6F6E006C519A /* txmempool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684EE1BBB6DF7006C519A /* txmempool.cpp */; };
+		308685DF1BBB6F6E006C519A /* validationinterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308684F91BBB6DF7006C519A /* validationinterface.cpp */; };
+		308685EA1BBB7C74006C519A /* memenv.h in Headers */ = {isa = PBXBuildFile; fileRef = 308685E91BBB7C74006C519A /* memenv.h */; };
+		308686011BBB7CDB006C519A /* memenv.cc in Sources */ = {isa = PBXBuildFile; fileRef = 308685FF1BBB7CC3006C519A /* memenv.cc */; };
+		308686251BBB84B7006C519A /* univalue_read.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086861E1BBB847E006C519A /* univalue_read.cpp */; };
+		308686261BBB84B7006C519A /* univalue_write.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3086861F1BBB847E006C519A /* univalue_write.cpp */; };
+		308686271BBB84B7006C519A /* univalue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308686201BBB847E006C519A /* univalue.cpp */; };
+		308686321BBB8838006C519A /* uint256.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308686311BBB8838006C519A /* uint256.cpp */; };
+		308686361BBB893E006C519A /* arena.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9881BBA05E2004C03D2 /* arena.cc */; };
+		308686371BBB893E006C519A /* block_builder.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9891BBA05E2004C03D2 /* block_builder.cc */; };
+		308686381BBB893E006C519A /* block.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B98A1BBA05E2004C03D2 /* block.cc */; };
+		308686391BBB893E006C519A /* bloom.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B98B1BBA05E2004C03D2 /* bloom.cc */; };
+		3086863A1BBB893E006C519A /* builder.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B98C1BBA05E2004C03D2 /* builder.cc */; };
+		3086863B1BBB893E006C519A /* c.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B98D1BBA05E2004C03D2 /* c.cc */; };
+		3086863C1BBB893E006C519A /* cache.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B98E1BBA05E2004C03D2 /* cache.cc */; };
+		3086863D1BBB893E006C519A /* coding.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B98F1BBA05E2004C03D2 /* coding.cc */; };
+		3086863E1BBB893E006C519A /* comparator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9901BBA05E2004C03D2 /* comparator.cc */; };
+		3086863F1BBB893E006C519A /* crc32c.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9911BBA05E2004C03D2 /* crc32c.cc */; };
+		308686401BBB893E006C519A /* db_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9DE1BBA0E99004C03D2 /* db_impl.cc */; };
+		308686411BBB893E006C519A /* db_iter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9921BBA05E2004C03D2 /* db_iter.cc */; };
+		308686421BBB893E006C519A /* dbformat.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9941BBA05E2004C03D2 /* dbformat.cc */; };
+		308686431BBB893E006C519A /* dumpfile.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9951BBA05E2004C03D2 /* dumpfile.cc */; };
+		308686441BBB893E006C519A /* env_posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9961BBA05E2004C03D2 /* env_posix.cc */; };
+		308686451BBB893E006C519A /* env_win.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9971BBA05E2004C03D2 /* env_win.cc */; };
+		308686461BBB893E006C519A /* env.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9981BBA05E2004C03D2 /* env.cc */; };
+		308686471BBB893E006C519A /* filename.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B9991BBA05E2004C03D2 /* filename.cc */; };
+		308686481BBB893E006C519A /* filter_block.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B99A1BBA05E2004C03D2 /* filter_block.cc */; };
+		308686491BBB893E006C519A /* filter_policy.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B99B1BBA05E2004C03D2 /* filter_policy.cc */; };
+		3086864A1BBB893E006C519A /* format.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B99C1BBA05E2004C03D2 /* format.cc */; };
+		3086864B1BBB893E006C519A /* hash.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B99D1BBA05E2004C03D2 /* hash.cc */; };
+		3086864C1BBB893E006C519A /* histogram.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3043B99E1BBA05E2004C03D2 /* histogram.cc */; };
+		308686C51BBBC979006C519A /* rpcclient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308686C41BBBC979006C519A /* rpcclient.cpp */; };
+		308686D31BBBCB44006C519A /* bitcoin-cli.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308686D21BBBCB44006C519A /* bitcoin-cli.cpp */; };
+		308686D41BBBCB86006C519A /* libbitcoin_cli.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308686631BBBC910006C519A /* libbitcoin_cli.a */; };
+		308686D51BBBCB86006C519A /* libbitcoin_common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308683401BBB11F2006C519A /* libbitcoin_common.a */; };
+		308686D61BBBCB86006C519A /* libbitcoin_crypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308682E31BBB0514006C519A /* libbitcoin_crypto.a */; };
+		308686D71BBBCB86006C519A /* libbitcoin_univalue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308686071BBB841E006C519A /* libbitcoin_univalue.a */; };
+		308686D81BBBCB86006C519A /* libbitcoin_util.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308683C51BBB316A006C519A /* libbitcoin_util.a */; };
+		308686D91BBBCB86006C519A /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308682591BBA10C3006C519A /* libleveldb.a */; };
+		308686DA1BBBCB87006C519A /* libmemenv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308685E71BBB7C73006C519A /* libmemenv.a */; };
+		308686DB1BBBCB87006C519A /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308683A41BBB2D05006C519A /* libsecp256k1.a */; };
+		308686DC1BBBCBAF006C519A /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308684181BBB38D5006C519A /* libcrypto.a */; };
+		308686DD1BBBCC19006C519A /* libboost_filesystem-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3086841E1BBB395A006C519A /* libboost_filesystem-mt.a */; };
+		308686DE1BBBCC27006C519A /* libboost_thread-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308684161BBB37CE006C519A /* libboost_thread-mt.a */; };
+		308686DF1BBBCC30006C519A /* libboost_program_options-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3086841F1BBB395A006C519A /* libboost_program_options-mt.a */; };
+		308686E01BBBCC51006C519A /* libboost_system-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3086862B1BBB8560006C519A /* libboost_system-mt.a */; };
+		308686E11BBBCC68006C519A /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3086862D1BBB85CC006C519A /* libevent.a */; };
+		308686E21BBBCC6C006C519A /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308686331BBB88B5006C519A /* libevent_pthreads.a */; };
+		308686EF1BBBD18E006C519A /* bitcoind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 308686EE1BBBD18E006C519A /* bitcoind.cpp */; };
+		308686F01BBBD236006C519A /* libbitcoin_common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308683401BBB11F2006C519A /* libbitcoin_common.a */; };
+		308686F11BBBD236006C519A /* libbitcoin_crypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308682E31BBB0514006C519A /* libbitcoin_crypto.a */; };
+		308686F21BBBD236006C519A /* libbitcoin_server.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3086842A1BBB68EA006C519A /* libbitcoin_server.a */; };
+		308686F31BBBD236006C519A /* libbitcoin_univalue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308686071BBB841E006C519A /* libbitcoin_univalue.a */; };
+		308686F41BBBD236006C519A /* libbitcoin_util.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308683C51BBB316A006C519A /* libbitcoin_util.a */; };
+		308686F51BBBD236006C519A /* libbitcoin_wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308683031BBB067D006C519A /* libbitcoin_wallet.a */; };
+		308686F61BBBD236006C519A /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308682591BBA10C3006C519A /* libleveldb.a */; };
+		308686F71BBBD236006C519A /* libmemenv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308685E71BBB7C73006C519A /* libmemenv.a */; };
+		308686F81BBBD236006C519A /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308683A41BBB2D05006C519A /* libsecp256k1.a */; };
+		308686F91BBBD25A006C519A /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308686331BBB88B5006C519A /* libevent_pthreads.a */; };
+		308686FA1BBBD25A006C519A /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3086862D1BBB85CC006C519A /* libevent.a */; };
+		308686FB1BBBD25A006C519A /* libboost_system-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3086862B1BBB8560006C519A /* libboost_system-mt.a */; };
+		308686FC1BBBD25A006C519A /* libboost_chrono-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308686291BBB8521006C519A /* libboost_chrono-mt.a */; };
+		308686FD1BBBD25A006C519A /* libboost_filesystem-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3086841E1BBB395A006C519A /* libboost_filesystem-mt.a */; };
+		308686FE1BBBD25A006C519A /* libboost_program_options-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3086841F1BBB395A006C519A /* libboost_program_options-mt.a */; };
+		308686FF1BBBD25A006C519A /* libdb_cxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3086841A1BBB391C006C519A /* libdb_cxx.a */; };
+		308687001BBBD25A006C519A /* libdb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3086841B1BBB391C006C519A /* libdb.a */; };
+		308687011BBBD25A006C519A /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308684181BBB38D5006C519A /* libcrypto.a */; };
+		308687021BBBD25A006C519A /* libboost_thread-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 308684161BBB37CE006C519A /* libboost_thread-mt.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3086862F1BBB87D6006C519A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 308681D21BBA003A006C519A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 308682581BBA10C3006C519A;
+			remoteInfo = leveldbStatic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		308682571BBA10C3006C519A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308682E11BBB0514006C519A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308683011BBB067D006C519A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308686C91BBBCAE1006C519A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		308686E51BBBCF52006C519A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3043B9881BBA05E2004C03D2 /* arena.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = arena.cc; path = ../../../src/leveldb/util/arena.cc; sourceTree = "<group>"; };
+		3043B9891BBA05E2004C03D2 /* block_builder.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block_builder.cc; path = ../../../src/leveldb/table/block_builder.cc; sourceTree = "<group>"; };
+		3043B98A1BBA05E2004C03D2 /* block.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block.cc; path = ../../../src/leveldb/table/block.cc; sourceTree = "<group>"; };
+		3043B98B1BBA05E2004C03D2 /* bloom.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bloom.cc; path = ../../../src/leveldb/util/bloom.cc; sourceTree = "<group>"; };
+		3043B98C1BBA05E2004C03D2 /* builder.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = builder.cc; path = ../../../src/leveldb/db/builder.cc; sourceTree = "<group>"; };
+		3043B98D1BBA05E2004C03D2 /* c.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = c.cc; path = ../../../src/leveldb/db/c.cc; sourceTree = "<group>"; };
+		3043B98E1BBA05E2004C03D2 /* cache.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cache.cc; path = ../../../src/leveldb/util/cache.cc; sourceTree = "<group>"; };
+		3043B98F1BBA05E2004C03D2 /* coding.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = coding.cc; path = ../../../src/leveldb/util/coding.cc; sourceTree = "<group>"; };
+		3043B9901BBA05E2004C03D2 /* comparator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = comparator.cc; path = ../../../src/leveldb/util/comparator.cc; sourceTree = "<group>"; };
+		3043B9911BBA05E2004C03D2 /* crc32c.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = crc32c.cc; path = ../../../src/leveldb/util/crc32c.cc; sourceTree = "<group>"; };
+		3043B9921BBA05E2004C03D2 /* db_iter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = db_iter.cc; path = ../../../src/leveldb/db/db_iter.cc; sourceTree = "<group>"; };
+		3043B9941BBA05E2004C03D2 /* dbformat.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dbformat.cc; path = ../../../src/leveldb/db/dbformat.cc; sourceTree = "<group>"; };
+		3043B9951BBA05E2004C03D2 /* dumpfile.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dumpfile.cc; path = ../../../src/leveldb/db/dumpfile.cc; sourceTree = "<group>"; };
+		3043B9961BBA05E2004C03D2 /* env_posix.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = env_posix.cc; path = ../../../src/leveldb/util/env_posix.cc; sourceTree = "<group>"; };
+		3043B9971BBA05E2004C03D2 /* env_win.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = env_win.cc; path = ../../../src/leveldb/util/env_win.cc; sourceTree = "<group>"; };
+		3043B9981BBA05E2004C03D2 /* env.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = env.cc; path = ../../../src/leveldb/util/env.cc; sourceTree = "<group>"; };
+		3043B9991BBA05E2004C03D2 /* filename.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = filename.cc; path = ../../../src/leveldb/db/filename.cc; sourceTree = "<group>"; };
+		3043B99A1BBA05E2004C03D2 /* filter_block.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = filter_block.cc; path = ../../../src/leveldb/table/filter_block.cc; sourceTree = "<group>"; };
+		3043B99B1BBA05E2004C03D2 /* filter_policy.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = filter_policy.cc; path = ../../../src/leveldb/util/filter_policy.cc; sourceTree = "<group>"; };
+		3043B99C1BBA05E2004C03D2 /* format.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = format.cc; path = ../../../src/leveldb/table/format.cc; sourceTree = "<group>"; };
+		3043B99D1BBA05E2004C03D2 /* hash.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hash.cc; path = ../../../src/leveldb/util/hash.cc; sourceTree = "<group>"; };
+		3043B99E1BBA05E2004C03D2 /* histogram.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = histogram.cc; path = ../../../src/leveldb/util/histogram.cc; sourceTree = "<group>"; };
+		3043B99F1BBA05E2004C03D2 /* iterator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iterator.cc; path = ../../../src/leveldb/table/iterator.cc; sourceTree = "<group>"; };
+		3043B9A01BBA05E2004C03D2 /* log_reader.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = log_reader.cc; path = ../../../src/leveldb/db/log_reader.cc; sourceTree = "<group>"; };
+		3043B9A11BBA05E2004C03D2 /* log_writer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = log_writer.cc; path = ../../../src/leveldb/db/log_writer.cc; sourceTree = "<group>"; };
+		3043B9A21BBA05E2004C03D2 /* logging.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = logging.cc; path = ../../../src/leveldb/util/logging.cc; sourceTree = "<group>"; };
+		3043B9A31BBA05E2004C03D2 /* memtable.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = memtable.cc; path = ../../../src/leveldb/db/memtable.cc; sourceTree = "<group>"; };
+		3043B9A41BBA05E2004C03D2 /* merger.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = merger.cc; path = ../../../src/leveldb/table/merger.cc; sourceTree = "<group>"; };
+		3043B9A51BBA05E2004C03D2 /* options.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = options.cc; path = ../../../src/leveldb/util/options.cc; sourceTree = "<group>"; };
+		3043B9A61BBA05E2004C03D2 /* port_posix.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = port_posix.cc; path = ../../../src/leveldb/port/port_posix.cc; sourceTree = "<group>"; };
+		3043B9A71BBA05E2004C03D2 /* repair.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = repair.cc; path = ../../../src/leveldb/db/repair.cc; sourceTree = "<group>"; };
+		3043B9A81BBA05E2004C03D2 /* status.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = status.cc; path = ../../../src/leveldb/util/status.cc; sourceTree = "<group>"; };
+		3043B9A91BBA05E2004C03D2 /* table_builder.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = table_builder.cc; path = ../../../src/leveldb/table/table_builder.cc; sourceTree = "<group>"; };
+		3043B9AA1BBA05E2004C03D2 /* table_cache.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = table_cache.cc; path = ../../../src/leveldb/db/table_cache.cc; sourceTree = "<group>"; };
+		3043B9AB1BBA05E2004C03D2 /* table.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = table.cc; path = ../../../src/leveldb/table/table.cc; sourceTree = "<group>"; };
+		3043B9AC1BBA05E2004C03D2 /* two_level_iterator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = two_level_iterator.cc; path = ../../../src/leveldb/table/two_level_iterator.cc; sourceTree = "<group>"; };
+		3043B9AD1BBA05E2004C03D2 /* version_edit.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = version_edit.cc; path = ../../../src/leveldb/db/version_edit.cc; sourceTree = "<group>"; };
+		3043B9AE1BBA05E2004C03D2 /* version_set.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = version_set.cc; path = ../../../src/leveldb/db/version_set.cc; sourceTree = "<group>"; };
+		3043B9AF1BBA05E2004C03D2 /* write_batch.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = write_batch.cc; path = ../../../src/leveldb/db/write_batch.cc; sourceTree = "<group>"; };
+		3043B9DC1BBA091B004C03D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3043B9DE1BBA0E99004C03D2 /* db_impl.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = db_impl.cc; path = ../../../src/leveldb/db/db_impl.cc; sourceTree = "<group>"; };
+		308681F91BBA0F9D006C519A /* c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c.h; sourceTree = "<group>"; };
+		308681FA1BBA0F9D006C519A /* cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cache.h; sourceTree = "<group>"; };
+		308681FB1BBA0F9D006C519A /* comparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comparator.h; sourceTree = "<group>"; };
+		308681FC1BBA0F9D006C519A /* db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = db.h; sourceTree = "<group>"; };
+		308681FD1BBA0F9D006C519A /* dumpfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dumpfile.h; sourceTree = "<group>"; };
+		308681FE1BBA0F9D006C519A /* env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = env.h; sourceTree = "<group>"; };
+		308681FF1BBA0F9D006C519A /* filter_policy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter_policy.h; sourceTree = "<group>"; };
+		308682001BBA0F9D006C519A /* iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
+		308682011BBA0F9D006C519A /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		308682021BBA0F9D006C519A /* slice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slice.h; sourceTree = "<group>"; };
+		308682031BBA0F9D006C519A /* status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = status.h; sourceTree = "<group>"; };
+		308682041BBA0F9D006C519A /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		308682051BBA0F9D006C519A /* table_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table_builder.h; sourceTree = "<group>"; };
+		308682061BBA0F9D006C519A /* write_batch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = write_batch.h; sourceTree = "<group>"; };
+		308682591BBA10C3006C519A /* libleveldb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libleveldb.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		308682D71BBB0411006C519A /* ripemd160.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ripemd160.cpp; path = ../../src/crypto/ripemd160.cpp; sourceTree = "<group>"; };
+		308682D81BBB0411006C519A /* sha1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sha1.cpp; path = ../../src/crypto/sha1.cpp; sourceTree = "<group>"; };
+		308682D91BBB0411006C519A /* sha256.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sha256.cpp; path = ../../src/crypto/sha256.cpp; sourceTree = "<group>"; };
+		308682DA1BBB0411006C519A /* sha512.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sha512.cpp; path = ../../src/crypto/sha512.cpp; sourceTree = "<group>"; };
+		308682E31BBB0514006C519A /* libbitcoin_crypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbitcoin_crypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		308683031BBB067D006C519A /* libbitcoin_wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbitcoin_wallet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3086831A1BBB0814006C519A /* crypter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = crypter.cpp; path = ../../src/wallet/crypter.cpp; sourceTree = "<group>"; };
+		3086831B1BBB0814006C519A /* db.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = db.cpp; path = ../../src/wallet/db.cpp; sourceTree = "<group>"; };
+		3086831C1BBB0814006C519A /* rpcdump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rpcdump.cpp; path = ../../src/wallet/rpcdump.cpp; sourceTree = "<group>"; };
+		3086831D1BBB0814006C519A /* rpcwallet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rpcwallet.cpp; path = ../../src/wallet/rpcwallet.cpp; sourceTree = "<group>"; };
+		3086831E1BBB0814006C519A /* wallet_ismine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wallet_ismine.cpp; path = ../../src/wallet/wallet_ismine.cpp; sourceTree = "<group>"; };
+		3086831F1BBB0814006C519A /* wallet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wallet.cpp; path = ../../src/wallet/wallet.cpp; sourceTree = "<group>"; };
+		308683201BBB0814006C519A /* walletdb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = walletdb.cpp; path = ../../src/wallet/walletdb.cpp; sourceTree = "<group>"; };
+		308683401BBB11F2006C519A /* libbitcoin_common.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libbitcoin_common.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		308683421BBB11F2006C519A /* bitcoin_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bitcoin_common.h; sourceTree = "<group>"; };
+		308683581BBB12B2006C519A /* amount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = amount.cpp; path = ../../src/amount.cpp; sourceTree = "<group>"; };
+		308683591BBB12B2006C519A /* arith_uint256.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = arith_uint256.cpp; path = ../../src/arith_uint256.cpp; sourceTree = "<group>"; };
+		3086835A1BBB12B2006C519A /* base58.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = base58.cpp; path = ../../src/base58.cpp; sourceTree = "<group>"; };
+		3086835B1BBB12B2006C519A /* chainparams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = chainparams.cpp; path = ../../src/chainparams.cpp; sourceTree = "<group>"; };
+		3086835C1BBB12B2006C519A /* coins.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = coins.cpp; path = ../../src/coins.cpp; sourceTree = "<group>"; };
+		3086835D1BBB12B2006C519A /* compressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = compressor.cpp; path = ../../src/compressor.cpp; sourceTree = "<group>"; };
+		3086835E1BBB12B2006C519A /* core_read.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = core_read.cpp; path = ../../src/core_read.cpp; sourceTree = "<group>"; };
+		3086835F1BBB12B2006C519A /* core_write.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = core_write.cpp; path = ../../src/core_write.cpp; sourceTree = "<group>"; };
+		308683601BBB12B2006C519A /* eccryptoverify.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eccryptoverify.cpp; path = ../../src/eccryptoverify.cpp; sourceTree = "<group>"; };
+		308683611BBB12B2006C519A /* ecwrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ecwrapper.cpp; path = ../../src/ecwrapper.cpp; sourceTree = "<group>"; };
+		308683621BBB12B2006C519A /* hash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hash.cpp; path = ../../src/hash.cpp; sourceTree = "<group>"; };
+		308683631BBB12B2006C519A /* key.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = key.cpp; path = ../../src/key.cpp; sourceTree = "<group>"; };
+		308683641BBB12B2006C519A /* keystore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = keystore.cpp; path = ../../src/keystore.cpp; sourceTree = "<group>"; };
+		308683651BBB12B2006C519A /* netbase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = netbase.cpp; path = ../../src/netbase.cpp; sourceTree = "<group>"; };
+		308683741BBB1342006C519A /* block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block.cpp; path = ../../src/primitives/block.cpp; sourceTree = "<group>"; };
+		308683751BBB1342006C519A /* transaction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = transaction.cpp; path = ../../src/primitives/transaction.cpp; sourceTree = "<group>"; };
+		308683781BBB1386006C519A /* protocol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = protocol.cpp; path = ../../src/protocol.cpp; sourceTree = "<group>"; };
+		308683791BBB1386006C519A /* pubkey.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pubkey.cpp; path = ../../src/pubkey.cpp; sourceTree = "<group>"; };
+		3086837A1BBB1386006C519A /* scheduler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = scheduler.cpp; path = ../../src/scheduler.cpp; sourceTree = "<group>"; };
+		3086837B1BBB1386006C519A /* interpreter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = interpreter.cpp; path = ../../src/script/interpreter.cpp; sourceTree = "<group>"; };
+		3086837C1BBB1386006C519A /* script_error.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = script_error.cpp; path = ../../src/script/script_error.cpp; sourceTree = "<group>"; };
+		3086837D1BBB1386006C519A /* script.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = script.cpp; path = ../../src/script/script.cpp; sourceTree = "<group>"; };
+		3086837E1BBB1386006C519A /* sign.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sign.cpp; path = ../../src/script/sign.cpp; sourceTree = "<group>"; };
+		3086837F1BBB1386006C519A /* standard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = standard.cpp; path = ../../src/script/standard.cpp; sourceTree = "<group>"; };
+		308683A41BBB2D05006C519A /* libsecp256k1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsecp256k1.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		308683A61BBB2D05006C519A /* secp256k1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
+		308683BB1BBB2D53006C519A /* secp256k1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = secp256k1.c; path = ../../src/secp256k1/src/secp256k1.c; sourceTree = "<group>"; };
+		308683C51BBB316A006C519A /* libbitcoin_util.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbitcoin_util.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		308683C71BBB316A006C519A /* bitcoin_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bitcoin_util.h; sourceTree = "<group>"; };
+		308683DE1BBB321A006C519A /* sync.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sync.cpp; path = ../../src/sync.cpp; sourceTree = "<group>"; };
+		308683DF1BBB321A006C519A /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = ../../src/util.cpp; sourceTree = "<group>"; };
+		308683E01BBB321A006C519A /* utilmoneystr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utilmoneystr.cpp; path = ../../src/utilmoneystr.cpp; sourceTree = "<group>"; };
+		308683E11BBB321A006C519A /* utilstrencodings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utilstrencodings.cpp; path = ../../src/utilstrencodings.cpp; sourceTree = "<group>"; };
+		308683E21BBB321A006C519A /* utiltime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utiltime.cpp; path = ../../src/utiltime.cpp; sourceTree = "<group>"; };
+		308683E81BBB3293006C519A /* cleanse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cleanse.cpp; path = ../../src/support/cleanse.cpp; sourceTree = "<group>"; };
+		308683E91BBB3293006C519A /* pagelocker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pagelocker.cpp; path = ../../src/support/pagelocker.cpp; sourceTree = "<group>"; };
+		308683EC1BBB35C7006C519A /* chainparamsbase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = chainparamsbase.cpp; path = ../../src/chainparamsbase.cpp; sourceTree = "<group>"; };
+		308683ED1BBB35C7006C519A /* clientversion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clientversion.cpp; path = ../../src/clientversion.cpp; sourceTree = "<group>"; };
+		308683EE1BBB35C7006C519A /* glibc_sanity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glibc_sanity.cpp; path = ../../src/compat/glibc_sanity.cpp; sourceTree = "<group>"; };
+		308683EF1BBB35C7006C519A /* glibcxx_sanity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glibcxx_sanity.cpp; path = ../../src/compat/glibcxx_sanity.cpp; sourceTree = "<group>"; };
+		308683F01BBB35C7006C519A /* strnlen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = strnlen.cpp; path = ../../src/compat/strnlen.cpp; sourceTree = "<group>"; };
+		308683F11BBB35C7006C519A /* random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = random.cpp; path = ../../src/random.cpp; sourceTree = "<group>"; };
+		308683F21BBB35C7006C519A /* rpcprotocol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rpcprotocol.cpp; path = ../../src/rpcprotocol.cpp; sourceTree = "<group>"; };
+		308684161BBB37CE006C519A /* libboost_thread-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt.a"; path = "/usr/local/Cellar/boost/1.57.0/lib/libboost_thread-mt.a"; sourceTree = "<absolute>"; };
+		308684181BBB38D5006C519A /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = /usr/local/Cellar/openssl/1.0.2/lib/libcrypto.a; sourceTree = "<absolute>"; };
+		3086841A1BBB391C006C519A /* libdb_cxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdb_cxx.a; path = "/usr/local/Cellar/berkeley-db4/4.8.30/lib/libdb_cxx.a"; sourceTree = "<absolute>"; };
+		3086841B1BBB391C006C519A /* libdb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdb.a; path = "/usr/local/Cellar/berkeley-db4/4.8.30/lib/libdb.a"; sourceTree = "<absolute>"; };
+		3086841E1BBB395A006C519A /* libboost_filesystem-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_filesystem-mt.a"; path = "/usr/local/Cellar/boost/1.57.0/lib/libboost_filesystem-mt.a"; sourceTree = "<absolute>"; };
+		3086841F1BBB395A006C519A /* libboost_program_options-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_program_options-mt.a"; path = "/usr/local/Cellar/boost/1.57.0/lib/libboost_program_options-mt.a"; sourceTree = "<absolute>"; };
+		308684221BBB6843006C519A /* hmac_sha256.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hmac_sha256.cpp; path = ../../src/crypto/hmac_sha256.cpp; sourceTree = "<group>"; };
+		308684231BBB6843006C519A /* hmac_sha512.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hmac_sha512.cpp; path = ../../src/crypto/hmac_sha512.cpp; sourceTree = "<group>"; };
+		3086842A1BBB68EA006C519A /* libbitcoin_server.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbitcoin_server.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3086842C1BBB68EA006C519A /* bitcoin_server.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bitcoin_server.h; sourceTree = "<group>"; };
+		308684461BBB6DF6006C519A /* addrman.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = addrman.cpp; path = ../../src/addrman.cpp; sourceTree = "<group>"; };
+		308684481BBB6DF6006C519A /* alert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = alert.cpp; path = ../../src/alert.cpp; sourceTree = "<group>"; };
+		3086845C1BBB6DF6006C519A /* bloom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bloom.cpp; path = ../../src/bloom.cpp; sourceTree = "<group>"; };
+		3086845D1BBB6DF6006C519A /* chain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = chain.cpp; path = ../../src/chain.cpp; sourceTree = "<group>"; };
+		308684601BBB6DF6006C519A /* checkpoints.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = checkpoints.cpp; path = ../../src/checkpoints.cpp; sourceTree = "<group>"; };
+		3086846A1BBB6DF6006C519A /* fees.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fees.cpp; path = ../../src/policy/fees.cpp; sourceTree = "<group>"; };
+		308684701BBB6DF6006C519A /* httprpc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = httprpc.cpp; path = ../../src/httprpc.cpp; sourceTree = "<group>"; };
+		308684711BBB6DF6006C519A /* httpserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = httpserver.cpp; path = ../../src/httpserver.cpp; sourceTree = "<group>"; };
+		308684721BBB6DF6006C519A /* init.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = init.cpp; path = ../../src/init.cpp; sourceTree = "<group>"; };
+		308684751BBB6DF6006C519A /* leveldbwrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = leveldbwrapper.cpp; path = ../../src/leveldbwrapper.cpp; sourceTree = "<group>"; };
+		308684781BBB6DF6006C519A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/main.cpp; sourceTree = "<group>"; };
+		3086847A1BBB6DF6006C519A /* merkleblock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = merkleblock.cpp; path = ../../src/merkleblock.cpp; sourceTree = "<group>"; };
+		3086847C1BBB6DF6006C519A /* miner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = miner.cpp; path = ../../src/miner.cpp; sourceTree = "<group>"; };
+		308684AD1BBB6DF6006C519A /* net.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = net.cpp; path = ../../src/net.cpp; sourceTree = "<group>"; };
+		308684B11BBB6DF6006C519A /* noui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = noui.cpp; path = ../../src/noui.cpp; sourceTree = "<group>"; };
+		308684BC1BBB6DF6006C519A /* policy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = policy.cpp; path = ../../src/policy/policy.cpp; sourceTree = "<group>"; };
+		308684BF1BBB6DF6006C519A /* pow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pow.cpp; path = ../../src/pow.cpp; sourceTree = "<group>"; };
+		308684C71BBB6DF7006C519A /* rest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rest.cpp; path = ../../src/rest.cpp; sourceTree = "<group>"; };
+		308684CB1BBB6DF7006C519A /* rpcblockchain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rpcblockchain.cpp; path = ../../src/rpcblockchain.cpp; sourceTree = "<group>"; };
+		308684CE1BBB6DF7006C519A /* rpcmining.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rpcmining.cpp; path = ../../src/rpcmining.cpp; sourceTree = "<group>"; };
+		308684CF1BBB6DF7006C519A /* rpcmisc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rpcmisc.cpp; path = ../../src/rpcmisc.cpp; sourceTree = "<group>"; };
+		308684D01BBB6DF7006C519A /* rpcnet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rpcnet.cpp; path = ../../src/rpcnet.cpp; sourceTree = "<group>"; };
+		308684D11BBB6DF7006C519A /* rpcrawtransaction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rpcrawtransaction.cpp; path = ../../src/rpcrawtransaction.cpp; sourceTree = "<group>"; };
+		308684D21BBB6DF7006C519A /* rpcserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rpcserver.cpp; path = ../../src/rpcserver.cpp; sourceTree = "<group>"; };
+		308684DB1BBB6DF7006C519A /* sigcache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sigcache.cpp; path = ../../src/script/sigcache.cpp; sourceTree = "<group>"; };
+		308684E41BBB6DF7006C519A /* timedata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = timedata.cpp; path = ../../src/timedata.cpp; sourceTree = "<group>"; };
+		308684ED1BBB6DF7006C519A /* txdb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = txdb.cpp; path = ../../src/txdb.cpp; sourceTree = "<group>"; };
+		308684EE1BBB6DF7006C519A /* txmempool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = txmempool.cpp; path = ../../src/txmempool.cpp; sourceTree = "<group>"; };
+		308684F91BBB6DF7006C519A /* validationinterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = validationinterface.cpp; path = ../../src/validationinterface.cpp; sourceTree = "<group>"; };
+		308685E71BBB7C73006C519A /* libmemenv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmemenv.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		308685E91BBB7C74006C519A /* memenv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = memenv.h; sourceTree = "<group>"; };
+		308685FF1BBB7CC3006C519A /* memenv.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = memenv.cc; path = ../../src/leveldb/helpers/memenv/memenv.cc; sourceTree = "<group>"; };
+		308686071BBB841E006C519A /* libbitcoin_univalue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbitcoin_univalue.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3086861E1BBB847E006C519A /* univalue_read.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = univalue_read.cpp; path = ../../src/univalue/univalue_read.cpp; sourceTree = "<group>"; };
+		3086861F1BBB847E006C519A /* univalue_write.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = univalue_write.cpp; path = ../../src/univalue/univalue_write.cpp; sourceTree = "<group>"; };
+		308686201BBB847E006C519A /* univalue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = univalue.cpp; path = ../../src/univalue/univalue.cpp; sourceTree = "<group>"; };
+		308686291BBB8521006C519A /* libboost_chrono-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_chrono-mt.a"; path = "/usr/local/Cellar/boost/1.57.0/lib/libboost_chrono-mt.a"; sourceTree = "<absolute>"; };
+		3086862B1BBB8560006C519A /* libboost_system-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_system-mt.a"; path = "/usr/local/Cellar/boost/1.57.0/lib/libboost_system-mt.a"; sourceTree = "<absolute>"; };
+		3086862D1BBB85CC006C519A /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = /usr/local/Cellar/libevent/2.0.22/lib/libevent.a; sourceTree = "<absolute>"; };
+		308686311BBB8838006C519A /* uint256.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = uint256.cpp; path = ../../src/uint256.cpp; sourceTree = "<group>"; };
+		308686331BBB88B5006C519A /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_pthreads.a; path = /usr/local/Cellar/libevent/2.0.22/lib/libevent_pthreads.a; sourceTree = "<absolute>"; };
+		308686631BBBC910006C519A /* libbitcoin_cli.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbitcoin_cli.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		308686C41BBBC979006C519A /* rpcclient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rpcclient.cpp; path = ../../src/rpcclient.cpp; sourceTree = "<group>"; };
+		308686CB1BBBCAE2006C519A /* bitcoin-cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "bitcoin-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
+		308686D21BBBCB44006C519A /* bitcoin-cli.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "bitcoin-cli.cpp"; path = "../../../src/bitcoin-cli.cpp"; sourceTree = "<group>"; };
+		308686E71BBBCF52006C519A /* bitcoind */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bitcoind; sourceTree = BUILT_PRODUCTS_DIR; };
+		308686EE1BBBD18E006C519A /* bitcoind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bitcoind.cpp; path = ../../../src/bitcoind.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		308682561BBA10C3006C519A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308682E01BBB0514006C519A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308683001BBB067D006C519A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3086833D1BBB11F2006C519A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308683A11BBB2D05006C519A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308683C21BBB316A006C519A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308684271BBB68EA006C519A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308685E41BBB7C73006C519A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308686041BBB841D006C519A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308686601BBBC910006C519A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308686C81BBBCAE1006C519A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308686E21BBBCC6C006C519A /* libevent_pthreads.a in Frameworks */,
+				308686E11BBBCC68006C519A /* libevent.a in Frameworks */,
+				308686E01BBBCC51006C519A /* libboost_system-mt.a in Frameworks */,
+				308686DF1BBBCC30006C519A /* libboost_program_options-mt.a in Frameworks */,
+				308686DE1BBBCC27006C519A /* libboost_thread-mt.a in Frameworks */,
+				308686DD1BBBCC19006C519A /* libboost_filesystem-mt.a in Frameworks */,
+				308686DC1BBBCBAF006C519A /* libcrypto.a in Frameworks */,
+				308686D41BBBCB86006C519A /* libbitcoin_cli.a in Frameworks */,
+				308686D51BBBCB86006C519A /* libbitcoin_common.a in Frameworks */,
+				308686D61BBBCB86006C519A /* libbitcoin_crypto.a in Frameworks */,
+				308686D71BBBCB86006C519A /* libbitcoin_univalue.a in Frameworks */,
+				308686D81BBBCB86006C519A /* libbitcoin_util.a in Frameworks */,
+				308686D91BBBCB86006C519A /* libleveldb.a in Frameworks */,
+				308686DA1BBBCB87006C519A /* libmemenv.a in Frameworks */,
+				308686DB1BBBCB87006C519A /* libsecp256k1.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308686E41BBBCF52006C519A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308686F91BBBD25A006C519A /* libevent_pthreads.a in Frameworks */,
+				308686FA1BBBD25A006C519A /* libevent.a in Frameworks */,
+				308686FB1BBBD25A006C519A /* libboost_system-mt.a in Frameworks */,
+				308686FC1BBBD25A006C519A /* libboost_chrono-mt.a in Frameworks */,
+				308686FD1BBBD25A006C519A /* libboost_filesystem-mt.a in Frameworks */,
+				308686FE1BBBD25A006C519A /* libboost_program_options-mt.a in Frameworks */,
+				308686FF1BBBD25A006C519A /* libdb_cxx.a in Frameworks */,
+				308687001BBBD25A006C519A /* libdb.a in Frameworks */,
+				308687011BBBD25A006C519A /* libcrypto.a in Frameworks */,
+				308687021BBBD25A006C519A /* libboost_thread-mt.a in Frameworks */,
+				308686F01BBBD236006C519A /* libbitcoin_common.a in Frameworks */,
+				308686F11BBBD236006C519A /* libbitcoin_crypto.a in Frameworks */,
+				308686F21BBBD236006C519A /* libbitcoin_server.a in Frameworks */,
+				308686F31BBBD236006C519A /* libbitcoin_univalue.a in Frameworks */,
+				308686F41BBBD236006C519A /* libbitcoin_util.a in Frameworks */,
+				308686F51BBBD236006C519A /* libbitcoin_wallet.a in Frameworks */,
+				308686F61BBBD236006C519A /* libleveldb.a in Frameworks */,
+				308686F71BBBD236006C519A /* libmemenv.a in Frameworks */,
+				308686F81BBBD236006C519A /* libsecp256k1.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3043B9871BBA021F004C03D2 /* leveldb */ = {
+			isa = PBXGroup;
+			children = (
+				3043B9881BBA05E2004C03D2 /* arena.cc */,
+				3043B9891BBA05E2004C03D2 /* block_builder.cc */,
+				3043B98A1BBA05E2004C03D2 /* block.cc */,
+				3043B98B1BBA05E2004C03D2 /* bloom.cc */,
+				3043B98C1BBA05E2004C03D2 /* builder.cc */,
+				3043B98D1BBA05E2004C03D2 /* c.cc */,
+				3043B98E1BBA05E2004C03D2 /* cache.cc */,
+				3043B98F1BBA05E2004C03D2 /* coding.cc */,
+				3043B9901BBA05E2004C03D2 /* comparator.cc */,
+				3043B9911BBA05E2004C03D2 /* crc32c.cc */,
+				3043B9DE1BBA0E99004C03D2 /* db_impl.cc */,
+				3043B9921BBA05E2004C03D2 /* db_iter.cc */,
+				3043B9941BBA05E2004C03D2 /* dbformat.cc */,
+				3043B9951BBA05E2004C03D2 /* dumpfile.cc */,
+				3043B9961BBA05E2004C03D2 /* env_posix.cc */,
+				3043B9971BBA05E2004C03D2 /* env_win.cc */,
+				3043B9981BBA05E2004C03D2 /* env.cc */,
+				3043B9991BBA05E2004C03D2 /* filename.cc */,
+				3043B99A1BBA05E2004C03D2 /* filter_block.cc */,
+				3043B99B1BBA05E2004C03D2 /* filter_policy.cc */,
+				3043B99C1BBA05E2004C03D2 /* format.cc */,
+				3043B99D1BBA05E2004C03D2 /* hash.cc */,
+				3043B99E1BBA05E2004C03D2 /* histogram.cc */,
+				308681F71BBA0F9D006C519A /* include */,
+				3043B9DC1BBA091B004C03D2 /* Info.plist */,
+				3043B99F1BBA05E2004C03D2 /* iterator.cc */,
+				3043B9A01BBA05E2004C03D2 /* log_reader.cc */,
+				3043B9A11BBA05E2004C03D2 /* log_writer.cc */,
+				3043B9A21BBA05E2004C03D2 /* logging.cc */,
+				3043B9A31BBA05E2004C03D2 /* memtable.cc */,
+				3043B9A41BBA05E2004C03D2 /* merger.cc */,
+				3043B9A51BBA05E2004C03D2 /* options.cc */,
+				3043B9A61BBA05E2004C03D2 /* port_posix.cc */,
+				3043B9A71BBA05E2004C03D2 /* repair.cc */,
+				3043B9A81BBA05E2004C03D2 /* status.cc */,
+				3043B9A91BBA05E2004C03D2 /* table_builder.cc */,
+				3043B9AA1BBA05E2004C03D2 /* table_cache.cc */,
+				3043B9AB1BBA05E2004C03D2 /* table.cc */,
+				3043B9AC1BBA05E2004C03D2 /* two_level_iterator.cc */,
+				3043B9AD1BBA05E2004C03D2 /* version_edit.cc */,
+				3043B9AE1BBA05E2004C03D2 /* version_set.cc */,
+				3043B9AF1BBA05E2004C03D2 /* write_batch.cc */,
+			);
+			name = leveldb;
+			path = BitcoinOSX;
+			sourceTree = "<group>";
+		};
+		308681D11BBA003A006C519A = {
+			isa = PBXGroup;
+			children = (
+				308686C61BBBC9A2006C519A /* bitcoin_client */,
+				308686241BBB8488006C519A /* univalue */,
+				308685FE1BBB7C7F006C519A /* memenv */,
+				308684411BBB690A006C519A /* server */,
+				308684421BBB691F006C519A /* external libraries */,
+				308683DD1BBB31C4006C519A /* util */,
+				308683DC1BBB3184006C519A /* secp256k1 */,
+				308683571BBB1208006C519A /* common */,
+				308683281BBB081E006C519A /* wallet */,
+				308682FE1BBB053D006C519A /* crypto */,
+				3043B9871BBA021F004C03D2 /* leveldb */,
+				308683411BBB11F2006C519A /* bitcoin_common */,
+				308683A51BBB2D05006C519A /* secp256k1 */,
+				308683C61BBB316A006C519A /* bitcoin_util */,
+				3086842B1BBB68EA006C519A /* bitcoin_server */,
+				308685E81BBB7C74006C519A /* memenv */,
+				308686641BBBC910006C519A /* bitcoin_cli */,
+				308686CC1BBBCAE2006C519A /* bitcoin-cli */,
+				308686E81BBBCF53006C519A /* bitcoind */,
+				308681DC1BBA003A006C519A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		308681DC1BBA003A006C519A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				308682591BBA10C3006C519A /* libleveldb.a */,
+				308682E31BBB0514006C519A /* libbitcoin_crypto.a */,
+				308683031BBB067D006C519A /* libbitcoin_wallet.a */,
+				308683401BBB11F2006C519A /* libbitcoin_common.a */,
+				308683A41BBB2D05006C519A /* libsecp256k1.a */,
+				308683C51BBB316A006C519A /* libbitcoin_util.a */,
+				3086842A1BBB68EA006C519A /* libbitcoin_server.a */,
+				308685E71BBB7C73006C519A /* libmemenv.a */,
+				308686071BBB841E006C519A /* libbitcoin_univalue.a */,
+				308686631BBBC910006C519A /* libbitcoin_cli.a */,
+				308686CB1BBBCAE2006C519A /* bitcoin-cli */,
+				308686E71BBBCF52006C519A /* bitcoind */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		308681F71BBA0F9D006C519A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				308681F81BBA0F9D006C519A /* leveldb */,
+			);
+			name = include;
+			path = ../../../src/leveldb/include;
+			sourceTree = "<group>";
+		};
+		308681F81BBA0F9D006C519A /* leveldb */ = {
+			isa = PBXGroup;
+			children = (
+				308681F91BBA0F9D006C519A /* c.h */,
+				308681FA1BBA0F9D006C519A /* cache.h */,
+				308681FB1BBA0F9D006C519A /* comparator.h */,
+				308681FC1BBA0F9D006C519A /* db.h */,
+				308681FD1BBA0F9D006C519A /* dumpfile.h */,
+				308681FE1BBA0F9D006C519A /* env.h */,
+				308681FF1BBA0F9D006C519A /* filter_policy.h */,
+				308682001BBA0F9D006C519A /* iterator.h */,
+				308682011BBA0F9D006C519A /* options.h */,
+				308682021BBA0F9D006C519A /* slice.h */,
+				308682031BBA0F9D006C519A /* status.h */,
+				308682041BBA0F9D006C519A /* table.h */,
+				308682051BBA0F9D006C519A /* table_builder.h */,
+				308682061BBA0F9D006C519A /* write_batch.h */,
+			);
+			path = leveldb;
+			sourceTree = "<group>";
+		};
+		308682FE1BBB053D006C519A /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				308684221BBB6843006C519A /* hmac_sha256.cpp */,
+				308684231BBB6843006C519A /* hmac_sha512.cpp */,
+				308682D71BBB0411006C519A /* ripemd160.cpp */,
+				308682D81BBB0411006C519A /* sha1.cpp */,
+				308682D91BBB0411006C519A /* sha256.cpp */,
+				308682DA1BBB0411006C519A /* sha512.cpp */,
+			);
+			name = crypto;
+			sourceTree = "<group>";
+		};
+		308683281BBB081E006C519A /* wallet */ = {
+			isa = PBXGroup;
+			children = (
+				3086831A1BBB0814006C519A /* crypter.cpp */,
+				3086831B1BBB0814006C519A /* db.cpp */,
+				3086831C1BBB0814006C519A /* rpcdump.cpp */,
+				3086831D1BBB0814006C519A /* rpcwallet.cpp */,
+				3086831E1BBB0814006C519A /* wallet_ismine.cpp */,
+				3086831F1BBB0814006C519A /* wallet.cpp */,
+				308683201BBB0814006C519A /* walletdb.cpp */,
+			);
+			name = wallet;
+			sourceTree = "<group>";
+		};
+		308683411BBB11F2006C519A /* bitcoin_common */ = {
+			isa = PBXGroup;
+			children = (
+				308683421BBB11F2006C519A /* bitcoin_common.h */,
+			);
+			path = bitcoin_common;
+			sourceTree = "<group>";
+		};
+		308683571BBB1208006C519A /* common */ = {
+			isa = PBXGroup;
+			children = (
+				308683781BBB1386006C519A /* protocol.cpp */,
+				308683791BBB1386006C519A /* pubkey.cpp */,
+				3086837A1BBB1386006C519A /* scheduler.cpp */,
+				3086837B1BBB1386006C519A /* interpreter.cpp */,
+				3086837C1BBB1386006C519A /* script_error.cpp */,
+				3086837D1BBB1386006C519A /* script.cpp */,
+				3086837E1BBB1386006C519A /* sign.cpp */,
+				3086837F1BBB1386006C519A /* standard.cpp */,
+				308683741BBB1342006C519A /* block.cpp */,
+				308683751BBB1342006C519A /* transaction.cpp */,
+				308683581BBB12B2006C519A /* amount.cpp */,
+				308683591BBB12B2006C519A /* arith_uint256.cpp */,
+				3086835A1BBB12B2006C519A /* base58.cpp */,
+				3086835B1BBB12B2006C519A /* chainparams.cpp */,
+				3086835C1BBB12B2006C519A /* coins.cpp */,
+				3086835D1BBB12B2006C519A /* compressor.cpp */,
+				3086835E1BBB12B2006C519A /* core_read.cpp */,
+				3086835F1BBB12B2006C519A /* core_write.cpp */,
+				308683601BBB12B2006C519A /* eccryptoverify.cpp */,
+				308683611BBB12B2006C519A /* ecwrapper.cpp */,
+				308683621BBB12B2006C519A /* hash.cpp */,
+				308683631BBB12B2006C519A /* key.cpp */,
+				308683641BBB12B2006C519A /* keystore.cpp */,
+				308683651BBB12B2006C519A /* netbase.cpp */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		308683A51BBB2D05006C519A /* secp256k1 */ = {
+			isa = PBXGroup;
+			children = (
+				308683A61BBB2D05006C519A /* secp256k1.h */,
+			);
+			path = secp256k1;
+			sourceTree = "<group>";
+		};
+		308683C61BBB316A006C519A /* bitcoin_util */ = {
+			isa = PBXGroup;
+			children = (
+				308683C71BBB316A006C519A /* bitcoin_util.h */,
+			);
+			path = bitcoin_util;
+			sourceTree = "<group>";
+		};
+		308683DC1BBB3184006C519A /* secp256k1 */ = {
+			isa = PBXGroup;
+			children = (
+				308683BB1BBB2D53006C519A /* secp256k1.c */,
+			);
+			name = secp256k1;
+			sourceTree = "<group>";
+		};
+		308683DD1BBB31C4006C519A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				308686311BBB8838006C519A /* uint256.cpp */,
+				308683EC1BBB35C7006C519A /* chainparamsbase.cpp */,
+				308683ED1BBB35C7006C519A /* clientversion.cpp */,
+				308683EE1BBB35C7006C519A /* glibc_sanity.cpp */,
+				308683EF1BBB35C7006C519A /* glibcxx_sanity.cpp */,
+				308683F01BBB35C7006C519A /* strnlen.cpp */,
+				308683F11BBB35C7006C519A /* random.cpp */,
+				308683F21BBB35C7006C519A /* rpcprotocol.cpp */,
+				308683DE1BBB321A006C519A /* sync.cpp */,
+				308683E81BBB3293006C519A /* cleanse.cpp */,
+				308683E91BBB3293006C519A /* pagelocker.cpp */,
+				308683DF1BBB321A006C519A /* util.cpp */,
+				308683E01BBB321A006C519A /* utilmoneystr.cpp */,
+				308683E11BBB321A006C519A /* utilstrencodings.cpp */,
+				308683E21BBB321A006C519A /* utiltime.cpp */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		3086842B1BBB68EA006C519A /* bitcoin_server */ = {
+			isa = PBXGroup;
+			children = (
+				3086842C1BBB68EA006C519A /* bitcoin_server.h */,
+			);
+			path = bitcoin_server;
+			sourceTree = "<group>";
+		};
+		308684411BBB690A006C519A /* server */ = {
+			isa = PBXGroup;
+			children = (
+				308684461BBB6DF6006C519A /* addrman.cpp */,
+				308684481BBB6DF6006C519A /* alert.cpp */,
+				3086845C1BBB6DF6006C519A /* bloom.cpp */,
+				3086845D1BBB6DF6006C519A /* chain.cpp */,
+				308684601BBB6DF6006C519A /* checkpoints.cpp */,
+				3086846A1BBB6DF6006C519A /* fees.cpp */,
+				308684701BBB6DF6006C519A /* httprpc.cpp */,
+				308684711BBB6DF6006C519A /* httpserver.cpp */,
+				308684721BBB6DF6006C519A /* init.cpp */,
+				308684751BBB6DF6006C519A /* leveldbwrapper.cpp */,
+				308684781BBB6DF6006C519A /* main.cpp */,
+				3086847A1BBB6DF6006C519A /* merkleblock.cpp */,
+				3086847C1BBB6DF6006C519A /* miner.cpp */,
+				308684AD1BBB6DF6006C519A /* net.cpp */,
+				308684B11BBB6DF6006C519A /* noui.cpp */,
+				308684BC1BBB6DF6006C519A /* policy.cpp */,
+				308684BF1BBB6DF6006C519A /* pow.cpp */,
+				308684C71BBB6DF7006C519A /* rest.cpp */,
+				308684CB1BBB6DF7006C519A /* rpcblockchain.cpp */,
+				308684CE1BBB6DF7006C519A /* rpcmining.cpp */,
+				308684CF1BBB6DF7006C519A /* rpcmisc.cpp */,
+				308684D01BBB6DF7006C519A /* rpcnet.cpp */,
+				308684D11BBB6DF7006C519A /* rpcrawtransaction.cpp */,
+				308684D21BBB6DF7006C519A /* rpcserver.cpp */,
+				308684DB1BBB6DF7006C519A /* sigcache.cpp */,
+				308684E41BBB6DF7006C519A /* timedata.cpp */,
+				308684ED1BBB6DF7006C519A /* txdb.cpp */,
+				308684EE1BBB6DF7006C519A /* txmempool.cpp */,
+				308684F91BBB6DF7006C519A /* validationinterface.cpp */,
+			);
+			name = server;
+			sourceTree = "<group>";
+		};
+		308684421BBB691F006C519A /* external libraries */ = {
+			isa = PBXGroup;
+			children = (
+				308686331BBB88B5006C519A /* libevent_pthreads.a */,
+				3086862D1BBB85CC006C519A /* libevent.a */,
+				3086862B1BBB8560006C519A /* libboost_system-mt.a */,
+				308686291BBB8521006C519A /* libboost_chrono-mt.a */,
+				3086841E1BBB395A006C519A /* libboost_filesystem-mt.a */,
+				3086841F1BBB395A006C519A /* libboost_program_options-mt.a */,
+				3086841A1BBB391C006C519A /* libdb_cxx.a */,
+				3086841B1BBB391C006C519A /* libdb.a */,
+				308684181BBB38D5006C519A /* libcrypto.a */,
+				308684161BBB37CE006C519A /* libboost_thread-mt.a */,
+			);
+			name = "external libraries";
+			sourceTree = "<group>";
+		};
+		308685E81BBB7C74006C519A /* memenv */ = {
+			isa = PBXGroup;
+			children = (
+				308685E91BBB7C74006C519A /* memenv.h */,
+			);
+			path = memenv;
+			sourceTree = "<group>";
+		};
+		308685FE1BBB7C7F006C519A /* memenv */ = {
+			isa = PBXGroup;
+			children = (
+				308685FF1BBB7CC3006C519A /* memenv.cc */,
+			);
+			name = memenv;
+			sourceTree = "<group>";
+		};
+		308686241BBB8488006C519A /* univalue */ = {
+			isa = PBXGroup;
+			children = (
+				3086861E1BBB847E006C519A /* univalue_read.cpp */,
+				3086861F1BBB847E006C519A /* univalue_write.cpp */,
+				308686201BBB847E006C519A /* univalue.cpp */,
+			);
+			name = univalue;
+			sourceTree = "<group>";
+		};
+		308686641BBBC910006C519A /* bitcoin_cli */ = {
+			isa = PBXGroup;
+			children = (
+				308686D21BBBCB44006C519A /* bitcoin-cli.cpp */,
+			);
+			path = bitcoin_cli;
+			sourceTree = "<group>";
+		};
+		308686C61BBBC9A2006C519A /* bitcoin_client */ = {
+			isa = PBXGroup;
+			children = (
+				308686C41BBBC979006C519A /* rpcclient.cpp */,
+			);
+			name = bitcoin_client;
+			sourceTree = "<group>";
+		};
+		308686CC1BBBCAE2006C519A /* bitcoin-cli */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "bitcoin-cli";
+			sourceTree = "<group>";
+		};
+		308686E81BBBCF53006C519A /* bitcoind */ = {
+			isa = PBXGroup;
+			children = (
+				308686EE1BBBD18E006C519A /* bitcoind.cpp */,
+			);
+			path = bitcoind;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3086833E1BBB11F2006C519A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308683431BBB11F2006C519A /* bitcoin_common.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308683A21BBB2D05006C519A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308683A71BBB2D05006C519A /* secp256k1.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308683C31BBB316A006C519A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308683C81BBB316A006C519A /* bitcoin_util.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308684281BBB68EA006C519A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3086842D1BBB68EA006C519A /* bitcoin_server.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308685E51BBB7C73006C519A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308685EA1BBB7C74006C519A /* memenv.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308686051BBB841D006C519A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308686611BBBC910006C519A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		308682581BBA10C3006C519A /* leveldb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3086826A1BBA10C3006C519A /* Build configuration list for PBXNativeTarget "leveldb" */;
+			buildPhases = (
+				308682551BBA10C3006C519A /* Sources */,
+				308682561BBA10C3006C519A /* Frameworks */,
+				308682571BBA10C3006C519A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = leveldb;
+			productName = leveldbStatic;
+			productReference = 308682591BBA10C3006C519A /* libleveldb.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		308682E21BBB0514006C519A /* bitcoin_crypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308682F41BBB0515006C519A /* Build configuration list for PBXNativeTarget "bitcoin_crypto" */;
+			buildPhases = (
+				308682DF1BBB0514006C519A /* Sources */,
+				308682E01BBB0514006C519A /* Frameworks */,
+				308682E11BBB0514006C519A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bitcoin_crypto;
+			productName = bitcoin_crypto;
+			productReference = 308682E31BBB0514006C519A /* libbitcoin_crypto.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		308683021BBB067D006C519A /* bitcoin_wallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308683141BBB067D006C519A /* Build configuration list for PBXNativeTarget "bitcoin_wallet" */;
+			buildPhases = (
+				308682FF1BBB067D006C519A /* Sources */,
+				308683001BBB067D006C519A /* Frameworks */,
+				308683011BBB067D006C519A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bitcoin_wallet;
+			productName = bitcoin_wallet;
+			productReference = 308683031BBB067D006C519A /* libbitcoin_wallet.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3086833F1BBB11F2006C519A /* bitcoin_common */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308683511BBB11F2006C519A /* Build configuration list for PBXNativeTarget "bitcoin_common" */;
+			buildPhases = (
+				3086833C1BBB11F2006C519A /* Sources */,
+				3086833D1BBB11F2006C519A /* Frameworks */,
+				3086833E1BBB11F2006C519A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bitcoin_common;
+			productName = bitcoin_common;
+			productReference = 308683401BBB11F2006C519A /* libbitcoin_common.a */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		308683A31BBB2D05006C519A /* secp256k1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308683B51BBB2D05006C519A /* Build configuration list for PBXNativeTarget "secp256k1" */;
+			buildPhases = (
+				308683A01BBB2D05006C519A /* Sources */,
+				308683A11BBB2D05006C519A /* Frameworks */,
+				308683A21BBB2D05006C519A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = secp256k1;
+			productName = secp256k1;
+			productReference = 308683A41BBB2D05006C519A /* libsecp256k1.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		308683C41BBB316A006C519A /* bitcoin_util */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308683D61BBB316A006C519A /* Build configuration list for PBXNativeTarget "bitcoin_util" */;
+			buildPhases = (
+				308683C11BBB316A006C519A /* Sources */,
+				308683C21BBB316A006C519A /* Frameworks */,
+				308683C31BBB316A006C519A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bitcoin_util;
+			productName = bitcoin_util;
+			productReference = 308683C51BBB316A006C519A /* libbitcoin_util.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		308684291BBB68EA006C519A /* bitcoin_server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3086843B1BBB68EA006C519A /* Build configuration list for PBXNativeTarget "bitcoin_server" */;
+			buildPhases = (
+				308684261BBB68EA006C519A /* Sources */,
+				308684271BBB68EA006C519A /* Frameworks */,
+				308684281BBB68EA006C519A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				308686301BBB87D6006C519A /* PBXTargetDependency */,
+			);
+			name = bitcoin_server;
+			productName = bitcoin_server;
+			productReference = 3086842A1BBB68EA006C519A /* libbitcoin_server.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		308685E61BBB7C73006C519A /* memenv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308685F81BBB7C74006C519A /* Build configuration list for PBXNativeTarget "memenv" */;
+			buildPhases = (
+				308685E31BBB7C73006C519A /* Sources */,
+				308685E41BBB7C73006C519A /* Frameworks */,
+				308685E51BBB7C73006C519A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = memenv;
+			productName = memenv;
+			productReference = 308685E71BBB7C73006C519A /* libmemenv.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		308686061BBB841D006C519A /* bitcoin_univalue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308686181BBB841E006C519A /* Build configuration list for PBXNativeTarget "bitcoin_univalue" */;
+			buildPhases = (
+				308686031BBB841D006C519A /* Sources */,
+				308686041BBB841D006C519A /* Frameworks */,
+				308686051BBB841D006C519A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bitcoin_univalue;
+			productName = bitcoin_univalue;
+			productReference = 308686071BBB841E006C519A /* libbitcoin_univalue.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		308686621BBBC910006C519A /* bitcoin_cli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308686741BBBC911006C519A /* Build configuration list for PBXNativeTarget "bitcoin_cli" */;
+			buildPhases = (
+				3086865F1BBBC910006C519A /* Sources */,
+				308686601BBBC910006C519A /* Frameworks */,
+				308686611BBBC910006C519A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bitcoin_cli;
+			productName = bitcoin_cli;
+			productReference = 308686631BBBC910006C519A /* libbitcoin_cli.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		308686CA1BBBCAE1006C519A /* bitcoin-cli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308686CF1BBBCAE2006C519A /* Build configuration list for PBXNativeTarget "bitcoin-cli" */;
+			buildPhases = (
+				308686C71BBBCAE1006C519A /* Sources */,
+				308686C81BBBCAE1006C519A /* Frameworks */,
+				308686C91BBBCAE1006C519A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bitcoin-cli";
+			productName = "bitcoin-cli";
+			productReference = 308686CB1BBBCAE2006C519A /* bitcoin-cli */;
+			productType = "com.apple.product-type.tool";
+		};
+		308686E61BBBCF52006C519A /* bitcoind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308686EB1BBBCF53006C519A /* Build configuration list for PBXNativeTarget "bitcoind" */;
+			buildPhases = (
+				308686E31BBBCF52006C519A /* Sources */,
+				308686E41BBBCF52006C519A /* Frameworks */,
+				308686E51BBBCF52006C519A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bitcoind;
+			productName = bitcoind;
+			productReference = 308686E71BBBCF52006C519A /* bitcoind */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		308681D21BBA003A006C519A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "iOS Developer Zone";
+				TargetAttributes = {
+					308682581BBA10C3006C519A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					308682E21BBB0514006C519A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					308683021BBB067D006C519A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					3086833F1BBB11F2006C519A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					308683A31BBB2D05006C519A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					308683C41BBB316A006C519A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					308684291BBB68EA006C519A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					308685E61BBB7C73006C519A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					308686061BBB841D006C519A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					308686621BBBC910006C519A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					308686CA1BBBCAE1006C519A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					308686E61BBBCF52006C519A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 308681D51BBA003A006C519A /* Build configuration list for PBXProject "BitcoinOSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 308681D11BBA003A006C519A;
+			productRefGroup = 308681DC1BBA003A006C519A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3086833F1BBB11F2006C519A /* bitcoin_common */,
+				308682E21BBB0514006C519A /* bitcoin_crypto */,
+				308683C41BBB316A006C519A /* bitcoin_util */,
+				308686621BBBC910006C519A /* bitcoin_cli */,
+				308684291BBB68EA006C519A /* bitcoin_server */,
+				308683021BBB067D006C519A /* bitcoin_wallet */,
+				308686061BBB841D006C519A /* bitcoin_univalue */,
+				308683A31BBB2D05006C519A /* secp256k1 */,
+				308682581BBA10C3006C519A /* leveldb */,
+				308685E61BBB7C73006C519A /* memenv */,
+				308686CA1BBBCAE1006C519A /* bitcoin-cli */,
+				308686E61BBBCF52006C519A /* bitcoind */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		308682551BBA10C3006C519A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308686411BBB893E006C519A /* db_iter.cc in Sources */,
+				308686461BBB893E006C519A /* env.cc in Sources */,
+				3086863F1BBB893E006C519A /* crc32c.cc in Sources */,
+				308682CE1BBAF5B5006C519A /* repair.cc in Sources */,
+				308682C71BBAF5B5006C519A /* log_reader.cc in Sources */,
+				308682CD1BBAF5B5006C519A /* port_posix.cc in Sources */,
+				308682C81BBAF5B5006C519A /* log_writer.cc in Sources */,
+				308686391BBB893E006C519A /* bloom.cc in Sources */,
+				308682D31BBAF5B5006C519A /* two_level_iterator.cc in Sources */,
+				308682CC1BBAF5B5006C519A /* options.cc in Sources */,
+				308682D01BBAF5B5006C519A /* table_builder.cc in Sources */,
+				308686421BBB893E006C519A /* dbformat.cc in Sources */,
+				308686431BBB893E006C519A /* dumpfile.cc in Sources */,
+				3086863C1BBB893E006C519A /* cache.cc in Sources */,
+				308686381BBB893E006C519A /* block.cc in Sources */,
+				3086863B1BBB893E006C519A /* c.cc in Sources */,
+				308682C91BBAF5B5006C519A /* logging.cc in Sources */,
+				308682CA1BBAF5B5006C519A /* memtable.cc in Sources */,
+				308686491BBB893E006C519A /* filter_policy.cc in Sources */,
+				308686451BBB893E006C519A /* env_win.cc in Sources */,
+				3086864A1BBB893E006C519A /* format.cc in Sources */,
+				3086863E1BBB893E006C519A /* comparator.cc in Sources */,
+				308682D21BBAF5B5006C519A /* table.cc in Sources */,
+				308682D61BBAF5B5006C519A /* write_batch.cc in Sources */,
+				308682CF1BBAF5B5006C519A /* status.cc in Sources */,
+				308686471BBB893E006C519A /* filename.cc in Sources */,
+				308682CB1BBAF5B5006C519A /* merger.cc in Sources */,
+				3086863A1BBB893E006C519A /* builder.cc in Sources */,
+				308686361BBB893E006C519A /* arena.cc in Sources */,
+				308682C61BBAF5B5006C519A /* iterator.cc in Sources */,
+				308682D11BBAF5B5006C519A /* table_cache.cc in Sources */,
+				308682D41BBAF5B5006C519A /* version_edit.cc in Sources */,
+				308686441BBB893E006C519A /* env_posix.cc in Sources */,
+				308686481BBB893E006C519A /* filter_block.cc in Sources */,
+				308686371BBB893E006C519A /* block_builder.cc in Sources */,
+				308686401BBB893E006C519A /* db_impl.cc in Sources */,
+				3086864B1BBB893E006C519A /* hash.cc in Sources */,
+				3086863D1BBB893E006C519A /* coding.cc in Sources */,
+				3086864C1BBB893E006C519A /* histogram.cc in Sources */,
+				308682D51BBAF5B5006C519A /* version_set.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308682DF1BBB0514006C519A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308682FC1BBB0534006C519A /* sha256.cpp in Sources */,
+				308682FD1BBB0534006C519A /* sha512.cpp in Sources */,
+				308682FA1BBB0534006C519A /* ripemd160.cpp in Sources */,
+				308682FB1BBB0534006C519A /* sha1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308682FF1BBB067D006C519A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3086832C1BBB0837006C519A /* rpcwallet.cpp in Sources */,
+				308683291BBB0837006C519A /* crypter.cpp in Sources */,
+				3086832D1BBB0837006C519A /* wallet_ismine.cpp in Sources */,
+				3086832A1BBB0837006C519A /* db.cpp in Sources */,
+				3086832E1BBB0837006C519A /* wallet.cpp in Sources */,
+				3086832B1BBB0837006C519A /* rpcdump.cpp in Sources */,
+				3086832F1BBB0837006C519A /* walletdb.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3086833C1BBB11F2006C519A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308683931BBB1395006C519A /* arith_uint256.cpp in Sources */,
+				308683991BBB1395006C519A /* core_write.cpp in Sources */,
+				3086838D1BBB1395006C519A /* script.cpp in Sources */,
+				308683911BBB1395006C519A /* transaction.cpp in Sources */,
+				3086838E1BBB1395006C519A /* sign.cpp in Sources */,
+				308683951BBB1395006C519A /* chainparams.cpp in Sources */,
+				308683961BBB1395006C519A /* coins.cpp in Sources */,
+				3086838A1BBB1395006C519A /* scheduler.cpp in Sources */,
+				3086839B1BBB1395006C519A /* ecwrapper.cpp in Sources */,
+				3086839A1BBB1395006C519A /* eccryptoverify.cpp in Sources */,
+				3086839E1BBB1395006C519A /* keystore.cpp in Sources */,
+				308683891BBB1395006C519A /* pubkey.cpp in Sources */,
+				308683881BBB1395006C519A /* protocol.cpp in Sources */,
+				3086838B1BBB1395006C519A /* interpreter.cpp in Sources */,
+				308683941BBB1395006C519A /* base58.cpp in Sources */,
+				3086839C1BBB1395006C519A /* hash.cpp in Sources */,
+				308683901BBB1395006C519A /* block.cpp in Sources */,
+				3086839D1BBB1395006C519A /* key.cpp in Sources */,
+				3086838C1BBB1395006C519A /* script_error.cpp in Sources */,
+				308683981BBB1395006C519A /* core_read.cpp in Sources */,
+				3086839F1BBB1395006C519A /* netbase.cpp in Sources */,
+				3086838F1BBB1395006C519A /* standard.cpp in Sources */,
+				308683971BBB1395006C519A /* compressor.cpp in Sources */,
+				308683921BBB1395006C519A /* amount.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308683A01BBB2D05006C519A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308683BD1BBB2D5A006C519A /* secp256k1.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308683C11BBB316A006C519A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308684051BBB35E8006C519A /* utilmoneystr.cpp in Sources */,
+				308684241BBB6843006C519A /* hmac_sha256.cpp in Sources */,
+				308683F31BBB35C7006C519A /* chainparamsbase.cpp in Sources */,
+				308686321BBB8838006C519A /* uint256.cpp in Sources */,
+				308683F51BBB35C7006C519A /* glibc_sanity.cpp in Sources */,
+				308684011BBB35E8006C519A /* sync.cpp in Sources */,
+				308683F81BBB35C7006C519A /* random.cpp in Sources */,
+				308684031BBB35E8006C519A /* pagelocker.cpp in Sources */,
+				308684071BBB35E8006C519A /* utiltime.cpp in Sources */,
+				308683F61BBB35C7006C519A /* glibcxx_sanity.cpp in Sources */,
+				308683F71BBB35C7006C519A /* strnlen.cpp in Sources */,
+				308684021BBB35E8006C519A /* cleanse.cpp in Sources */,
+				308683F41BBB35C7006C519A /* clientversion.cpp in Sources */,
+				308683F91BBB35C7006C519A /* rpcprotocol.cpp in Sources */,
+				308684061BBB35E8006C519A /* utilstrencodings.cpp in Sources */,
+				308684251BBB6843006C519A /* hmac_sha512.cpp in Sources */,
+				308684041BBB35E8006C519A /* util.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308684261BBB68EA006C519A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308685CE1BBB6F6E006C519A /* merkleblock.cpp in Sources */,
+				308685DE1BBB6F6E006C519A /* txmempool.cpp in Sources */,
+				308685C91BBB6F6E006C519A /* httprpc.cpp in Sources */,
+				308685D61BBB6F6E006C519A /* rpcmining.cpp in Sources */,
+				308685CD1BBB6F6E006C519A /* main.cpp in Sources */,
+				308685D11BBB6F6E006C519A /* noui.cpp in Sources */,
+				308685C81BBB6F6E006C519A /* fees.cpp in Sources */,
+				308685DD1BBB6F6E006C519A /* txdb.cpp in Sources */,
+				308685D71BBB6F6E006C519A /* rpcmisc.cpp in Sources */,
+				308685D31BBB6F6E006C519A /* pow.cpp in Sources */,
+				308685CB1BBB6F6E006C519A /* init.cpp in Sources */,
+				308685CA1BBB6F6E006C519A /* httpserver.cpp in Sources */,
+				308685C31BBB6F6E006C519A /* addrman.cpp in Sources */,
+				308685DF1BBB6F6E006C519A /* validationinterface.cpp in Sources */,
+				308685D81BBB6F6E006C519A /* rpcnet.cpp in Sources */,
+				308685C41BBB6F6E006C519A /* alert.cpp in Sources */,
+				308685DB1BBB6F6E006C519A /* sigcache.cpp in Sources */,
+				308685DC1BBB6F6E006C519A /* timedata.cpp in Sources */,
+				308685CF1BBB6F6E006C519A /* miner.cpp in Sources */,
+				308685C71BBB6F6E006C519A /* checkpoints.cpp in Sources */,
+				308685D51BBB6F6E006C519A /* rpcblockchain.cpp in Sources */,
+				308685D41BBB6F6E006C519A /* rest.cpp in Sources */,
+				308685C61BBB6F6E006C519A /* chain.cpp in Sources */,
+				308685D91BBB6F6E006C519A /* rpcrawtransaction.cpp in Sources */,
+				308685D01BBB6F6E006C519A /* net.cpp in Sources */,
+				308685DA1BBB6F6E006C519A /* rpcserver.cpp in Sources */,
+				308685C51BBB6F6E006C519A /* bloom.cpp in Sources */,
+				308685D21BBB6F6E006C519A /* policy.cpp in Sources */,
+				308685CC1BBB6F6E006C519A /* leveldbwrapper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308685E31BBB7C73006C519A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308686011BBB7CDB006C519A /* memenv.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308686031BBB841D006C519A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308686271BBB84B7006C519A /* univalue.cpp in Sources */,
+				308686261BBB84B7006C519A /* univalue_write.cpp in Sources */,
+				308686251BBB84B7006C519A /* univalue_read.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3086865F1BBBC910006C519A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308686C51BBBC979006C519A /* rpcclient.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308686C71BBBCAE1006C519A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308686D31BBBCB44006C519A /* bitcoin-cli.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		308686E31BBBCF52006C519A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308686EF1BBBD18E006C519A /* bitcoind.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		308686301BBB87D6006C519A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 308682581BBA10C3006C519A /* leveldb */;
+			targetProxy = 3086862F1BBB87D6006C519A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		308681EF1BBA003A006C519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"HAVE_CONFIG_H=1",
+					"DEBUG=1",
+					"MAC_OSX=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode-6.3.1-6D1002.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					/usr/local/include,
+					"/usr/local/opt/berkeley-db4/include",
+					"${PROJECT_DIR}/../../src/secp256k1/include",
+					"${PROJECT_DIR}/../../src/leveldb/include",
+					"${PROJECT_DIR}/../../src/leveldb/helpers/memenv",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../../src ${PROJECT_DIR}/../../src/config ${PROJECT_DIR}/../../src/secp256k1";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		308681F01BBA003A006C519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"HAVE_CONFIG_H=1",
+					"MAC_OSX=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode-6.3.1-6D1002.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					/usr/local/include,
+					"/usr/local/opt/berkeley-db4/include",
+					"${PROJECT_DIR}/../../src/secp256k1/include",
+					"${PROJECT_DIR}/../../src/leveldb/include",
+					"${PROJECT_DIR}/../../src/leveldb/helpers/memenv",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../../src ${PROJECT_DIR}/../../src/config ${PROJECT_DIR}/../../src/secp256k1";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3086826B1BBA10C3006C519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"LEVELDB_PLATFORM_POSIX=1",
+					"OS_MACOSX=1",
+					"${inherited}",
+					"LEVELDB_ATOMIC_PRESENT=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = leveldb;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../../src/leveldb/include  ${PROJECT_DIR}/../../src/leveldb/";
+			};
+			name = Debug;
+		};
+		3086826C1BBA10C3006C519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"LEVELDB_PLATFORM_POSIX=1",
+					"OS_MACOSX=1",
+					"LEVELDB_ATOMIC_PRESENT=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = leveldb;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../../src/leveldb/include  ${PROJECT_DIR}/../../src/leveldb/";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		308682F51BBB0515006C519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		308682F61BBB0515006C519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		308683151BBB067D006C519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		308683161BBB067D006C519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		308683521BBB11F2006C519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = a;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		308683531BBB11F2006C519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = a;
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		308683B61BBB2D05006C519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		308683B71BBB2D05006C519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		308683D71BBB316A006C519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		308683D81BBB316A006C519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3086843C1BBB68EA006C519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3086843D1BBB68EA006C519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		308685F91BBB7C74006C519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"LEVELDB_PLATFORM_POSIX=1",
+					"OS_MACOSX=1",
+					"${inherited}",
+					"LEVELDB_ATOMIC_PRESENT=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../../src/leveldb/include  ${PROJECT_DIR}/../../src/leveldb/";
+			};
+			name = Debug;
+		};
+		308685FA1BBB7C74006C519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"LEVELDB_PLATFORM_POSIX=1",
+					"OS_MACOSX=1",
+					"LEVELDB_ATOMIC_PRESENT=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../../src/leveldb/include  ${PROJECT_DIR}/../../src/leveldb/";
+			};
+			name = Release;
+		};
+		308686191BBB841E006C519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_INT_CONVERSION = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3086861A1BBB841E006C519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_INT_CONVERSION = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		308686751BBBC911006C519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_INT_CONVERSION = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		308686761BBBC911006C519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_INT_CONVERSION = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		308686D01BBBCAE2006C519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_INT_CONVERSION = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/openssl/1.0.2/lib,
+					/usr/local/Cellar/boost/1.57.0/lib,
+					/usr/local/Cellar/libevent/2.0.22/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		308686D11BBBCAE2006C519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_INT_CONVERSION = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/openssl/1.0.2/lib,
+					/usr/local/Cellar/boost/1.57.0/lib,
+					/usr/local/Cellar/libevent/2.0.22/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		308686EC1BBBCF53006C519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_INT_CONVERSION = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libevent/2.0.22/lib,
+					/usr/local/Cellar/boost/1.57.0/lib,
+					"/usr/local/Cellar/berkeley-db4/4.8.30/lib",
+					/usr/local/Cellar/openssl/1.0.2/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		308686ED1BBBCF53006C519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_INT_CONVERSION = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libevent/2.0.22/lib,
+					/usr/local/Cellar/boost/1.57.0/lib,
+					"/usr/local/Cellar/berkeley-db4/4.8.30/lib",
+					/usr/local/Cellar/openssl/1.0.2/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		308681D51BBA003A006C519A /* Build configuration list for PBXProject "BitcoinOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308681EF1BBA003A006C519A /* Debug */,
+				308681F01BBA003A006C519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3086826A1BBA10C3006C519A /* Build configuration list for PBXNativeTarget "leveldb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3086826B1BBA10C3006C519A /* Debug */,
+				3086826C1BBA10C3006C519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		308682F41BBB0515006C519A /* Build configuration list for PBXNativeTarget "bitcoin_crypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308682F51BBB0515006C519A /* Debug */,
+				308682F61BBB0515006C519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		308683141BBB067D006C519A /* Build configuration list for PBXNativeTarget "bitcoin_wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308683151BBB067D006C519A /* Debug */,
+				308683161BBB067D006C519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		308683511BBB11F2006C519A /* Build configuration list for PBXNativeTarget "bitcoin_common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308683521BBB11F2006C519A /* Debug */,
+				308683531BBB11F2006C519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		308683B51BBB2D05006C519A /* Build configuration list for PBXNativeTarget "secp256k1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308683B61BBB2D05006C519A /* Debug */,
+				308683B71BBB2D05006C519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		308683D61BBB316A006C519A /* Build configuration list for PBXNativeTarget "bitcoin_util" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308683D71BBB316A006C519A /* Debug */,
+				308683D81BBB316A006C519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3086843B1BBB68EA006C519A /* Build configuration list for PBXNativeTarget "bitcoin_server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3086843C1BBB68EA006C519A /* Debug */,
+				3086843D1BBB68EA006C519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		308685F81BBB7C74006C519A /* Build configuration list for PBXNativeTarget "memenv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308685F91BBB7C74006C519A /* Debug */,
+				308685FA1BBB7C74006C519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		308686181BBB841E006C519A /* Build configuration list for PBXNativeTarget "bitcoin_univalue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308686191BBB841E006C519A /* Debug */,
+				3086861A1BBB841E006C519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		308686741BBBC911006C519A /* Build configuration list for PBXNativeTarget "bitcoin_cli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308686751BBBC911006C519A /* Debug */,
+				308686761BBBC911006C519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		308686CF1BBBCAE2006C519A /* Build configuration list for PBXNativeTarget "bitcoin-cli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308686D01BBBCAE2006C519A /* Debug */,
+				308686D11BBBCAE2006C519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		308686EB1BBBCF53006C519A /* Build configuration list for PBXNativeTarget "bitcoind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308686EC1BBBCF53006C519A /* Debug */,
+				308686ED1BBBCF53006C519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 308681D21BBA003A006C519A /* Project object */;
+}
